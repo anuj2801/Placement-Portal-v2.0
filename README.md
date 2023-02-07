@@ -5,8 +5,6 @@
 
 [![Welcome to my profile](https://img.shields.io/badge/Hello,Programmer!-Welcome-blue.svg?style=flat&logo=github)](https://github.com/GDSC-IIIT-Kalyani)
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/GDSC-IIIT-Kalyani/placement-portal)
-![Stars](https://img.shields.io/github/stars/GDSC-IIIT-Kalyani/placement-portal?style=flat&logo=github)
-![Forks](https://img.shields.io/github/forks/GDSC-IIIT-Kalyani/placement-portal?style=flat&logo=github)
 
 </div>
 <br>
