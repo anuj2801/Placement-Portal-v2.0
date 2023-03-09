@@ -5,8 +5,6 @@
 
 [![Welcome to my profile](https://img.shields.io/badge/Hello,Programmer!-Welcome-blue.svg?style=flat&logo=github)](https://github.com/GDSC-IIIT-Kalyani)
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/GDSC-IIIT-Kalyani/placement-portal)
-![Stars](https://img.shields.io/github/stars/GDSC-IIIT-Kalyani/placement-portal?style=flat&logo=github)
-![Forks](https://img.shields.io/github/forks/GDSC-IIIT-Kalyani/placement-portal?style=flat&logo=github)
 
 </div>
 <br>
@@ -78,17 +76,4 @@ git push -u origin <your_branch_name>
 <h1 id="prs">Issues & Pull Requests</h1>
 
 Before making pull requests please look at our contributing guidelines (coming soon). You can start working on the issue which are mentioned in issues section. Just drop a comment before working on the issue. Thank you!
-
-
-# ✨ Contributors
-
-<a href="https://github.com/GDSC-IIIT-Kalyani/placement-portal/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=GDSC-IIIT-Kalyani/placement-portal" />
-</a>
-
-
-<div align="center">
- <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="love" />
- <img src="https://forthebadge.com/images/badges/thats-how-they-get-you.svg" alt="how">
-</div>
 
