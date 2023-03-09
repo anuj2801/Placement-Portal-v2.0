@@ -13,6 +13,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5%;
 }
 
 body {
@@ -205,7 +206,7 @@ h2 {
   height: 75px;
   padding: 0 50px;
   background: white;
-  border-bottom: 1px solid#ebecf0;
+  border-bottom: 1px solid #ebecf0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -234,7 +235,7 @@ h2 {
 #mobile-menu a {
   display: inline-block;
   padding: 5px 15px;
-  border-radius: 15px;
+  border-radius: 10px;
   line-height: 20px;
 }
 
@@ -307,7 +308,7 @@ h2 {
 }
 
 #mobile-menu a:hover {
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(195, 195, 195);
 }
 
 #mobile-menu a.blue-background {
@@ -316,7 +317,7 @@ h2 {
 }
 
 .section {
-  border-top: 1px solid#ebecf0;
+  border-top: 1px solid #ebecf0;
   position: relative;
   min-height: 100%;
   width: 100%;
@@ -347,7 +348,7 @@ h2 {
 }
 
 .download-link:hover {
-  background: #2b64cb !important;
+  background: #1d499b !important;
   color: white !important;
 }
 .brochure-link {
@@ -365,10 +366,12 @@ h2 {
 }
 
 a.brochure-link:hover {
-  transform: scale(1.1);
-  font-weight: 600;
+  transform: scale(1.07);
+  transition-duration: 0.5s;
+  font-weight: 550;
+  /* font-weight: 600; */
   color: white !important;
-  background-color: black;
+  /* background-color: black; */
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -394,6 +397,7 @@ a.brochure-link:hover {
 #about .about-text {
   width: 65%;
   padding: 10px 50px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #about .about-img {
@@ -469,13 +473,13 @@ a.brochure-link:hover {
   height: 150px;
   -webkit-transition: width 0.75s; /* Safari */
   transition: height width 0.75s;
+  transition: 0.3s;
 }
 
 #infrastructure .infra-icon img:hover {
   display: block;
   padding: 15px;
-  width: 157px;
-  height: 157px;
+  transform: scale(1.1);
 }
 
 #infrastructure .infra-icon span {
@@ -530,6 +534,13 @@ a.brochure-link:hover {
 .messagebox .img-div-mobile img {
   height: 80%;
   margin-right: 25px;
+}
+
+.tpoImg{
+  height: 12rem;
+  border-radius: 5%;
+  display: flex;
+  margin: auto;
 }
 
 #register {
@@ -981,7 +992,7 @@ table {
 }
 
 a:hover {
-  color: black !important;
+  color: rgb(0, 0, 0) !important;
 }
 .heading-footer {
   padding: 10px;
@@ -1026,7 +1037,7 @@ a:hover {
 }
 
 .flex-footer > div > a:hover {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 #footer-credits {
@@ -1175,10 +1186,11 @@ a:hover {
     flex-direction: column-reverse;
   }
 
+  
   #about .about-text {
     width: 100%;
   }
-
+  
   #about .about-img {
     width: 100%;
     padding: 10px 30px;
@@ -1647,8 +1659,7 @@ p.awesome_line {
   background: #204584;
   box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.5s ease 0;
-  transition: all 0.5s ease 0;
-  transition: all 0.5s ease 0s;
+  transition: all 0.8s ease-out 0s;
 }
 .item:hover .item,
 .item:hover span.icon {
