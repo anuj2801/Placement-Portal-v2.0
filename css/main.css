@@ -13,6 +13,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5%;
 }
 
 body {
@@ -534,9 +535,10 @@ a.brochure-link:hover {
   height: 80%;
   margin-right: 25px;
 }
+
 .tpoImg{
-  height: 10rem;
-  border-radius: 100%;
+  height: 12rem;
+  border-radius: 5%;
   display: flex;
   margin: auto;
 }
