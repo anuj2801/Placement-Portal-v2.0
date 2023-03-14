@@ -11,8 +11,36 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#204584">
   <link rel="icon" href="img/logo_small.png">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript"> 
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Average', 'Highest'],
+          ['2017',  6,      10],
+          ['2018',  6.7,      11],
+          ['2019',  7.3,       13],
+          ['2020',  7.8,      15],
+          ['2021',8.4, 17],
+          ['2022', 10.54, 20]
+        ]);
+
+        var options = {
+          title: 'Placements Stats',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 
 <body>
@@ -218,43 +246,227 @@
     <h1 class="headinggs small-heading" style="width: 90%; margin:0 auto;">
       Past Recruiters
     </h1>
-    <div id="slider" style="margin-bottom: 50px; margin-top: 50px;">
-      <figure>
-        <img src="img/adobe.jpg">
-
-
-        <img src="img/jio.png">
-        <img src="img/maq.png">
-        <img src="img/infosys.png">
-        <img src="img/wipro.png">
-        <img src="img/yelloClass_intern.png">
-        <img src="img/sqaudstack.jpg">
-
-        <img src="img/virtusa.png">
-        <img src="img/tcs.jfif">
-        <img src="img/fossee_old.png">
-        <img src="img/tcGDigital.jpeg">
-        <img src="img/deloitte.png">
-        <img src="img/capgemini.png">
-        <img src="img/AppyhighLogo.png">
-        <img src="img/314e.png">
-        <img src="img/oneshot.jpg">
-        <img src="img/extramarks.png">
-        <img src="img/gobudgo.jpg">
-
-        <img src="img/quolum.png">
-        <img src="img/publicSapient.png">
-        <img src="img/natinal_lib_old.png">
-        <img src="img/softech_old.png">
-        <img src="img/smartprix_old.png">
-        <img src="img/adecco_old.png">
-        <img src="img/infolo_old.jpg">
-        <img src="img/mihup_old.png">
-        <img src="img/sigmoid.png">
-        <img src="img/vap_old.png">
-        <img src="img/mindfire_old.png">
-      </figure>
+    <div class="image-container">
+      <div class="image-wrapper">
+        <div>
+          <img src="./img/pngwing.com.png" alt="" height="70%" width="70%">
+        </div>
+        <div class="slide">
+          <img src="./img/yelloClass_intern.png" alt="" height="80%" width="80%">
+        </div>
+        <div>
+          <img src="./img/gojek.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div>
+          <img src="./img/Goldman_Sachs-Logo.wine.png" alt="" height="100%" width="100%">
+        </div>
+        <div>
+          <img src="./img/Gupshup.png" alt="" height="100%" width="100%">
+        </div>
+        <div>
+          <img src="./img/amazon-n.png" alt="" height="100%" width="100%">
+        </div>
+  
+        <div class="slide">
+          <img src="./img/sqaudstack.jpg" alt="" height="70%" width="70%">
+        </div>
+  
+        <div class="slide">
+          <img src="./img/cognizant.jpeg" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/cisco.png" alt="" height="70%" width="70%">
+        </div>
+        <div class="slide">
+          <img src="./img/accolite.png" alt="" height="90%" width="80%">
+        </div>
+  
+        <div class="slide">
+          <img src="./img/gobudgo.jpg" alt="" height="80%" width="40%">
+        </div>
+  
+        <div class="slide">
+          <img src="./img/infolo.jpg" alt="" height="80%" width="60%">
+        </div>
+        <div class="slide">
+          <img src="./img/infosys.png" alt="" height="80%" width="200px">
+        </div>
+        <div class="slide">
+          <img src="./img/jio.png" alt="" height="90%" width="90%">
+        </div>
+  
+        <div class="slide">
+          <img src="./img/maq.png" alt="" height="100%" width="100%">
+        </div>
+        <div class="slide">
+          <img src="./img/mihup.png" alt="" height="80%" width="80%">
+        </div>
+        <div class="slide">
+          <img src="./img/tata1mg.png" alt="" >
+        </div>
+  
+  
+        <div class="slide">
+          <img src="./img/oneshot.jpg" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/wipro.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./img/sharechat.png" alt="" height="80%" width="80%">
+        </div>
+      </div>
+  
+      <div class="image-wrapper_1">
+        <div class="slide">
+          <img src="./img/314e.png" alt=""  height="50%" width="50%">
+        </div>
+        <div class="slide">
+          <img src="./img/adecco_old.png" alt=""  height="50%" width="50%">
+        </div>
+        <div class="slide">
+          <img src="./img/zensar.png" alt=""  height="50%" width="50%">
+        </div>
+        <div class="slide">
+          <img src="./img/vap.png" alt=""  height="50%" width="50%">
+        </div>
+        <div class="slide">
+          <img src="./img/trigent.jpg" alt=""  height="50%" width="50%">
+        </div>
+        <div class="slide">
+          <img src="./img/vassarlab.png" alt=""  height="50%" width="50%" >
+        </div>
+        <div class="slide">
+          <img src="./img/thrillophilia.png" alt="" height="50%" width="50%" >
+        </div>
+        <div class="slide">
+          <img src="./img/tele.png" alt="" height="50%" width="50%" >
+        </div>
+        <div class="slide">
+          <img src="./img/tcGDigital.jpeg" alt=""  height="50%" width="50%">
+        </div>
+        <div class="slide">
+          <img src="./img/Tanzen_intern.png" alt="" height="50%" width="50%" >
+        </div>
+        <div class="slide">
+          <img src="./img/sudLife_intern.jpg" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/softech.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/smartprix.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/shopconnect.jpeg" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/ritwik.jpeg" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/redsky_technologies.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/quolum.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/publicSapient.png" alt="" >
+        </div>
+  
+        <div class="slide">
+          <img src="./img/planentspark.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/octro_intern.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/natinal_lib.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/nagarro.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/mindfire.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/loyalty_jaggernaut.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/kickdrum.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/infolo.jpg" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/fossee.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/ericsson.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/elucidata.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/dotpe.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/deltaX.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/cuvette.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/cogoport.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/clevertap.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/cdot.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/brigosha.jpeg" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/beehyv.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/Affine_Analytics.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/accolite.png" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/addverb.jpeg" alt="" >
+        </div>
+        <div class="slide">
+          <img src="./img/adecco.png" alt="" >
+        </div>
+  
+  
+  
+  
+  
+  
+        <div class="slide">
+          <img src="./img/infolo.jpg" alt="" >
+        </div>
+  
+  
+  
+  
+        <div class="slide">
+          <img src="./img/mindfire.png" alt="" >
+        </div>
+  
+  
+  
+  
+  
+  
+      </div>
     </div>
+      
   </div>
 
   <div id="placement-record" class="section">
@@ -342,9 +554,7 @@
           </div>
         </div>
       </div>
-      <div class="2folds">
-        <img src="./img/2folds/20-21.jpg" alt="2folds of batch 2017-2021" class="batch20_21">
-      </div>
+      <div id="curve_chart" style="width: 900px; height: 500px"></div>
     </div>
     <!-- <div id="placement-chart">
       <canvas id="mycanvas" width="700px" height="700px"></canvas>
@@ -787,6 +997,65 @@
     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <script type="text/javascript" src="js/main.js"></script>
   <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <script>
+    
+    const imageWrapper = document.querySelector('.image-wrapper')
+    const imageItems = document.querySelectorAll('.image-wrapper > *')
+    const imageLength = imageItems.length
+    const perView = 6
+    let totalScroll = 0
+    const delay = 2400
+
+    imageWrapper.style.setProperty('--per-view', perView)
+    for (let i = 0; i < perView; i++) {
+      imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+    }
+
+    let autoScroll = setInterval(scrolling, delay)
+
+    function scrolling() {
+      totalScroll++
+      if (totalScroll == imageLength + 1) {
+        clearInterval(autoScroll)
+        totalScroll = 1
+        imageWrapper.style.transition = '0s'
+        imageWrapper.style.left = '0'
+        autoScroll = setInterval(scrolling, delay)
+      }
+      const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
+      imageWrapper.style.left = `-${totalScroll * widthEl}px`
+      imageWrapper.style.transition = '2.7s'
+    }
+
+  // wrapper-2
+  const imageWrapper_1 = document.querySelector('.image-wrapper_1')
+  const imageItem_1 = document.querySelectorAll('.image-wrapper_1 > *')
+  const iamgeLength_1 = imageItem_1.length
+  const perView_1 = 6
+  let totalscroll_1 = 0
+  const delay_1 = 1600
+  
+  imageWrapper_1.style.setProperty('--per-view', perView_1)
+  for (let i = 0; i < perView_1; i++) {
+    imageWrapper_1.insertAdjacentHTML('beforeend', imageItem_1[i].outerHTML)
+  }
+  
+  let autoScroll_1 = setInterval(scrolling_1, delay_1)
+  
+  function scrolling_1() {
+    totalscroll_1++
+    if (totalscroll_1 == iamgeLength_1 + 1) {
+      clearInterval(autoScroll_1)
+      totalscroll_1 = 1
+      imageWrapper_1.style.transition = '0s'
+      imageWrapper_1.style.left = '0'
+      autoScroll_1 = setInterval(scrolling_1, delay_1)
+    }
+    const widthEl_1 = document.querySelector('.image-wrapper_1 > :first-child').offsetWidth + 24
+    imageWrapper_1.style.left = `-${totalscroll_1 * widthEl_1}px`
+    imageWrapper_1.style.transition = '3s'
+  }
+  </script>
   <!--   <script type="text/javascript" src="js/main.js"></script> -->
 </body>
 
