@@ -92,7 +92,7 @@ a {
   color: inherit !important;
 }
 a:hover {
-  color: rgb(0, 90, 181) !important;
+  color: rgb(138, 189, 67) !important;
 }
 
 .heading {
@@ -500,6 +500,7 @@ a.brochure-link:hover {
 .messagebox {
   width: 50%;
   margin: 50px 30px;
+  
 }
 
 .messagebox .title-bar {
@@ -1002,7 +1003,7 @@ table {
 }
 
 a:hover {
-  color: rgb(0, 0, 0) !important;
+  color: rgb(22, 50, 232) !important;
 }
 .heading-footer {
   padding: 10px;
@@ -1793,3 +1794,8 @@ p.awesome_line {
   padding: 3px 7px;
   border-radius: 30px;
 }
+
+#footer-icons{
+  text-align: center;
+}
+/* new files */
