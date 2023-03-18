@@ -1003,7 +1003,7 @@ table {
 }
 
 a:hover {
-  color: rgb(22, 50, 232) !important;
+  color: rgb(208, 230, 16) !important;
 }
 .heading-footer {
   padding: 10px;
@@ -1799,3 +1799,33 @@ p.awesome_line {
   text-align: center;
 }
 /* new files */
+
+div.footerIcons{
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+div.footerIcons a{
+  padding: 10px 12px;
+  border-radius: 3px;
+  font-size: 25px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+div.footerIcons a:hover{
+  opacity: 0.8;
+}
+.fb{
+  background: rgb(14,57,129) ;
+}
+.insta{
+  background:  rgb(14,57,129);
+}
+.twitter{
+  background:  rgb(14,57,129);
+}
+.linkedin{
+  background:  rgb(14,57,129);
+}

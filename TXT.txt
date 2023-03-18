@@ -1,0 +1,29 @@
+div.footerIcons{
+        display: flex;
+        column-gap: 5px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    div.footerIcons a{
+        padding: 10px 12px;
+        border-radius: 3px;
+        font-size: 20px;
+        color: white;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    div.footerIcons a:hover{
+        opacity: 0.8;
+    }
+    .fb{
+        background: #1877f2 ;
+    }
+    .insta{
+        background: #fb3958;
+    }
+    .twitter{
+        background: #00acee;
+    }
+    .linkedin{
+        background: #0e76a8;
+    }
