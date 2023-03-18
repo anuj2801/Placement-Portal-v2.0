@@ -92,7 +92,7 @@ a {
   color: inherit !important;
 }
 a:hover {
-  color: rgb(138, 189, 67) !important;
+  color: rgb(0, 90, 181) !important;
 }
 
 .heading {
@@ -500,7 +500,6 @@ a.brochure-link:hover {
 .messagebox {
   width: 50%;
   margin: 50px 30px;
-  
 }
 
 .messagebox .title-bar {
@@ -1003,7 +1002,7 @@ table {
 }
 
 a:hover {
-  color: rgb(208, 230, 16) !important;
+  color: rgb(0, 0, 0) !important;
 }
 .heading-footer {
   padding: 10px;
@@ -1793,39 +1792,4 @@ p.awesome_line {
   background: rgba(0, 0, 0, 0.9);
   padding: 3px 7px;
   border-radius: 30px;
-}
-
-#footer-icons{
-  text-align: center;
-}
-/* new files */
-
-div.footerIcons{
-  display: flex;
-  column-gap: 5px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-div.footerIcons a{
-  padding: 10px 12px;
-  border-radius: 3px;
-  font-size: 25px;
-  color: white;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-div.footerIcons a:hover{
-  opacity: 0.8;
-}
-.fb{
-  background: rgb(14,57,129) ;
-}
-.insta{
-  background:  rgb(14,57,129);
-}
-.twitter{
-  background:  rgb(14,57,129);
-}
-.linkedin{
-  background:  rgb(14,57,129);
 }
