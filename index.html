@@ -15,30 +15,31 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript"> 
-      google.charts.load('current', {'packages':['corechart']});
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Average', 'Highest'],
-          ['2017',  6,      10],
-          ['2018',  6.7,      11],
-          ['2019',  7.3,       13],
-          ['2020',  7.8,      15],
-          ['2021',8.4, 17],
-          ['2022', 10.54, 20]
+          ['Batch', 'Highest',  'Average'],
+          ['2014-18', 10, 3],
+          ['2015-19', 10, 3.4],
+          ['2016-20', 6.2,  17],
+          ['2017-21', 8,  17],
+          ['2018-22', 10.73, 15]
         ]);
 
         var options = {
-          title: 'Placements Stats',
-          curveType: 'function',
-          legend: { position: 'bottom' }
+          chart: {
+            title: 'Placement Statistics',
+            
+          },
+          bars: 'vertical' // Required for Material Bar Charts.
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
 
-        chart.draw(data, options);
+        chart.draw(data, google.charts.Bar.convertOptions(options));
       }
     </script>
 </head>
@@ -461,7 +462,7 @@
   <div id="placement-record" class="section">
     <h1 class="headinggs small-heading">Placement Statistics - 2021</h1>
 
-    <div id="placement-synopsis" style="margin-left: 10%;">
+    <div id="placement-synopsis" style="margin-left: -1%;">
       <div id="placement-detail-1">
         <div class="table100 ver5 m-b-110">
           <div class="table100-body js-pscroll">
@@ -542,8 +543,8 @@
             </table>
           </div>
         </div>
-      </div>
-      <div id="curve_chart" style="width: 900px; height: 500px"></div>
+      </div >
+      <div id="barchart_material" style="width: 700px; height: 500px;"></div>
     </div>
     <!-- <div id="placement-chart">
       <canvas id="mycanvas" width="700px" height="700px"></canvas>
