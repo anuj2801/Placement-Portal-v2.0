@@ -21,7 +21,7 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Batch', 'Highest',  'Average'],
+          ['BATCH', 'Highest',  'Average'],
           ['2014-18', 10, 3],
           ['2015-19', 10, 3.4],
           ['2016-20', 17,  6.2],
@@ -42,28 +42,7 @@
         chart.draw(data, google.charts.Bar.convertOptions(options));
       }
     </script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-        ]);
-
-        var options = {
-          title: 'My Daily Activities',
-          is3D: true,
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart.draw(data, options);
-      }
-    </script>
+    
 </head>
 
 <body>
