@@ -1,9 +1,14 @@
 
+
 /* IMAGE */
 .image-container {
+   
     margin-top: 20px;
     overflow-x: hidden;
-    max-width: 1468px;
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 4px;
 }
 .image-wrapper {
     display: grid;
@@ -37,5 +42,4 @@ img {
     border-radius: .5rem;
 }
 /* IMAGE */
-
 
