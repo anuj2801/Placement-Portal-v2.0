@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 
@@ -21,6 +22,12 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
+          ['BATCH', 'Highest Package in LPA',  'Average Package in LPA', ],
+          ['2014-18', 10, 3],
+          ['2015-19', 10, 3.4],
+          ['2016-20', 17,  6.2],
+          ['2017-21', 17,  8],
+          ['2018-22', 15, 10.73]
           ['Year', 'Average', 'Highest'],
           ['2017',  6,      10],
           ['2018',  6.7,      11],
@@ -41,6 +48,7 @@
         chart.draw(data, options);
       }
     </script>
+    
 </head>
 
 <body>
@@ -99,6 +107,8 @@
     <img src="img/background.svg" class="home-background">
     <div>
       <div class="home-text">
+        <span class="heading" style="font-size: 35px;"><br>Training and Placement Cell, </br> IIIT Kalyani</span><br>
+        
         <span class="heading">Placement Portal</span><br>
         <p style="max-width: 400px;" class="home_para">Passion is the difference between having a job or having a
           career.</><br>
@@ -110,7 +120,7 @@
     </div>
     <div class="employees-image"
       style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-      <img src="img/team.png" style="width:100%;">
+      <img src="img/team.gif" style="width:100%;">
     </div>
   </div>
 
@@ -151,7 +161,7 @@
             <img class="d-block w-100" src="./img/cllg1.jpeg" alt="Third slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="./img/cllg2.jpg" alt="Third slide">
+            <img class="d-block w-100" src="img\img-class.jpg" alt="Third slide">
           </div>
 
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -224,6 +234,7 @@
             <div class="item"> <span class="icon feature_box_col_five" style="text-align:center;"><i
                   class="fa fa-upload" style="font-size:40px;"></i></span>
               <h6 style="text-align:center;">Projects</h6>
+              <p>Students are encouraged to take up projects on contemporary topics as a part of their independent study whch includes image processing, Cryptography, Artificial Intelligence And Machine Learning. Arrangements will be made for practical training on projects of leading companies. </p>
               <p>Students are encouraged to take up projects on contemporary topics as a part of their independent study. Arrangements will be made for practical training on live projects in conjunction with leading companies in the industry.</p>
             </div>
           </div>
@@ -515,13 +526,13 @@
                 <tr class="row100 body">
                   <td class="cell100 column1">Highest Package</td>
                   <td class="cell100 column2">17 lpa</td>
-                  <td class="cell100 column3"></td>
+                  <td class="cell100 column3" style="background-color: #F4D03F;"></td>
                 </tr>
 
                 <tr class="row100 body">
                   <td class="cell100 column1">Average Package</td>
                   <td class="cell100 column2">8 lpa</td>
-                  <td class="cell100 column3"></td>
+                  <td class="cell100 column3" style="background-color: brown;"></td>
                 </tr>
 
 
@@ -553,6 +564,46 @@
             </table>
           </div>
         </div>
+      </div>
+      <div id="barchart_material" style="width: 700px; height: 500px; padding-left: 5%; padding-top: 3%;"></div>
+      <div id="textbox" style="padding-top: 10%;">
+        <table>
+          <thead>
+            <tr>
+              <th>Batch</th>
+              <th>Highest Package</th>
+              <th>Average Package</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2014-18</td>
+              <td>10</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>2015-19</td>
+              <td>10</td>
+              <td>3.4</td>
+            </tr>
+            <tr>
+              <td>2016-20</td>
+              <td>17</td>
+              <td>6.2</td>
+            </tr>
+            <tr>
+              <td>2017-21</td>
+              <td>17</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>2018-22</td>
+              <td>15</td>
+              <td>10.7</td>
+            </tr>
+          </tbody>
+        </table>
+        
       </div>
       <div id="curve_chart" style="width: 900px; height: 500px"></div>
     </div>
@@ -715,6 +766,8 @@
         <div class="img-div">
           
           <div style="padding-left: 10px;">
+            <img class="tpoImg" src="img\pratik.jpg">
+            <span style="font-size: 15px; font-weight: bold; margin-top: 1rem; text-align: center;">Dr. Pratik Chakraborty</span><br>
             <img src="img/pratik.jfif" class="center" style="width: 70%;"><br><br>
             <span style="font-size: 15px; font-weight: bold;">Dr. Pratik Chakraborty</span><br>
             Faculty In-charge,<br>Training and Placement Cell,<br> IIIT Kalyani
@@ -785,7 +838,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="our-team">
             <div class="picture">
-              <img class="img-fluid" src="./img/pratik.jfif">
+              <img class="img-fluid" src="./img/pratik.jpg">
             </div>
             <div class="team-content">
 
@@ -811,7 +864,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="our-team">
             <div class="picture">
-              <img class="img-fluid" src="img/img-tpo.png">
+              <img class="img-fluid" src="img\SANJAY.jpg">
             </div>
             <div class="team-content">
               <h3 class="name">Sanjay Chatterji</h3>
@@ -867,7 +920,7 @@
     <div class="heading-footer" style="align-items: center;">
       <h1 class="fot-head" style="color: white;">
         Placement Cell, IIIT Kalyani
-      </h1>
+        </h1>
     </div>
     <div id="footer-container-down">
       <div id="footer-address" class="flex-footer">
@@ -1003,9 +1056,18 @@
     const imageWrapper = document.querySelector('.image-wrapper')
     const imageItems = document.querySelectorAll('.image-wrapper > *')
     const imageLength = imageItems.length
-    const perView = 6
+    var perView = 6
+    var perView_1 = 6
     let totalScroll = 0
     const delay = 2400
+    function mobile() {
+    if(window.innerWidth < 648) {
+      perView = 3
+      perView_1 = 3
+    }
+    }
+
+    mobile();
 
     imageWrapper.style.setProperty('--per-view', perView)
     for (let i = 0; i < perView; i++) {
@@ -1032,7 +1094,7 @@
   const imageWrapper_1 = document.querySelector('.image-wrapper_1')
   const imageItem_1 = document.querySelectorAll('.image-wrapper_1 > *')
   const iamgeLength_1 = imageItem_1.length
-  const perView_1 = 6
+  
   let totalscroll_1 = 0
   const delay_1 = 1600
   
@@ -1059,5 +1121,4 @@
   </script>
   <!--   <script type="text/javascript" src="js/main.js"></script> -->
 </body>
-
 </html>
