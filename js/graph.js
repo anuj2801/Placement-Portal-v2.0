@@ -22,7 +22,9 @@ const highAvgStat = document.getElementById("myChart").getContext("2d");
   }
   ;
   // console.log(getDataOfColumn(1));
-
+  Chart.defaults.font.family = "Teko";
+Chart.defaults.font.size = 22;
+Chart.defaults.color = "black";
 var data = {
   labels: getDataOfColumn(0),
   datasets: [

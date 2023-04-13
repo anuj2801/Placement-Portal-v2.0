@@ -898,8 +898,8 @@ a.brochure-link:hover {
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 50vh;
-  /* margin-top: 10vh; */
+  height: 45vh;
+  margin: 1px;
   /* padding: 20; */
 }
 
