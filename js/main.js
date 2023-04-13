@@ -1,3 +1,11 @@
+// var data = google.visualization.arrayToDataTable([
+//   ['Year', 'Highest Package (LPA)', 'Average Package (LPA)',''],
+//   ['2017-2018', 10, 3, 0],
+//   ['2018-2019', 10, 3.4, 0],
+//   ['2019-2020', 17, 6.2, 0],
+//   ['2020-2021', 17, 8, 0],
+//   ['2021-2022', 26.41, 13.54, 0]
+// ]);
 $(document).ready(function () {
   var ctx = $("#mycanvas").get(0).getContext("2d");
   // pie chart data
