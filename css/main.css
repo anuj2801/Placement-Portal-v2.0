@@ -894,14 +894,17 @@ a.brochure-link:hover {
   justify-content:space-evenly;
 }
 .placementGraph{
-  display :flex;
+  display :block;
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 45vh;
+  height: 60vh;
+  /* margin-top: 5vh; */
   margin: 1px;
   /* padding: 20; */
+  overflow-y: hidden;
 }
+
 
 @media only screen and (min-width: 1000px) {
   #placement-chart {
@@ -913,7 +916,7 @@ a.brochure-link:hover {
 
 #placement-record {
   /* background-color: red; */
-  margin: 10px;
+  /* margin: 10px; */
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: column;
