@@ -15,39 +15,8 @@
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript"> 
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['BATCH', 'Highest Package in LPA',  'Average Package in LPA', ],
-          ['2014-18', 10, 3],
-          ['2015-19', 10, 3.4],
-          ['2016-20', 17,  6.2],
-          ['2017-21', 17,  8],
-          ['2018-22', 15, 10.73]
-          ['Year', 'Average', 'Highest'],
-          ['2017',  6,      10],
-          ['2018',  6.7,      11],
-          ['2019',  7.3,       13],
-          ['2020',  7.8,      15],
-          ['2021',8.4, 17],
-          ['2022', 10.54, 20]
-        ]);
-
-        var options = {
-          title: 'Placements Stats',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
     
 </head>
 
@@ -481,11 +450,11 @@
   </div>
 
   <div id="placement-record" class="section">
-    <h1 class="headinggs small-heading">Placement Statistics - 2021</h1>
-
-    <div id="placement-synopsis">
+    <h1 class="headinggs small-heading">Placement Statistics - 2022</h1>
+    <!-- <div id="placement-synopsis"> -->
+      <div id="placement-synopsis">
       <div id="placement-detail-1">
-        <div class="table100 ver5 m-b-110">
+        <div class="table100 ver5 m-b-110"> 
           <div class="table100-body js-pscroll">
             <table style="width: 100%;">
               <caption
@@ -564,48 +533,17 @@
             </table>
           </div>
         </div>
+      
       </div>
-      <div id="barchart_material" style="width: 700px; height: 500px; padding-left: 5%; padding-top: 3%;"></div>
-      <div id="textbox" style="padding-top: 10%;">
-        <table>
-          <thead>
-            <tr>
-              <th>Batch</th>
-              <th>Highest Package</th>
-              <th>Average Package</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2014-18</td>
-              <td>10</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>2015-19</td>
-              <td>10</td>
-              <td>3.4</td>
-            </tr>
-            <tr>
-              <td>2016-20</td>
-              <td>17</td>
-              <td>6.2</td>
-            </tr>
-            <tr>
-              <td>2017-21</td>
-              <td>17</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>2018-22</td>
-              <td>15</td>
-              <td>10.7</td>
-            </tr>
-          </tbody>
-        </table>
-        
-      </div>
-      <div id="curve_chart" style="width: 900px; height: 500px"></div>
+      <!-- <div id="myChart" class="placementGraph" ></div> -->
+      <div >
+        <canvas id="myChart" class="placementGraph"></canvas>
+      </div>    
+      <script src="js/graph.js"></script>
+   
+    
+
+      <!-- <div id="curve_chart" style="width: 900px; height: 500px"></div> -->
     </div>
     <!-- <div id="placement-chart">
       <canvas id="mycanvas" width="700px" height="700px"></canvas>
@@ -620,7 +558,8 @@
     </div>
     <div class="passout">
       <!-- <a href="placement_stats/placement22-23.pdf" target="_blank" class="download-link">Batch 2016 - 2020</a> -->
-      <a href="placement_stats/placement21-22.pdf" target="_blank" class="download-link">Batch 2018 - 2022</a>
+      <!-- <a href="placement_stats/placement22-23.pdf" target="_blank" class="download-link">Batch 2019 - 2023</a> -->
+      <a href="#placement-record" target="_blank" class="download-link">Batch 2018 - 2022</a>
       <a href="placement_stats/placement20-21.pdf" target="_blank" class="download-link">Batch 2017 - 2021</a>
       <a href="placement_stats/placement19-20.pdf" target="_blank" class="download-link">Batch 2016 - 2020</a>
       <a href="placement_stats/placement18-19.pdf" target="_blank" class="download-link">Batch 2015 - 2019</a>
@@ -1120,5 +1059,8 @@
   }
   </script>
   <!--   <script type="text/javascript" src="js/main.js"></script> -->
+   <!-- Adding script for the graph under Placement Statistics -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
 </body>
 </html>

@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:700");
 @import url("https://fonts.googleapis.com/css?family=Hammersmith+One");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+}
 :root {
   /* Colors */
   --brand-color: hsl(213, 70%, 22%);
@@ -863,8 +867,10 @@ a.brochure-link:hover {
   width: 35vw;
   height: 60vh;
   padding: 0 0;
-  margin: 0;
+  margin:0;
+  margin-right: 5%;
   border-radius: 5px;
+  margin-bottom: 4%;
 }
 
 #placement-detail-1 tbody {
@@ -879,13 +885,22 @@ a.brochure-link:hover {
 
 #placement-synopsis {
   /* padding: 20px 20px; */
+  /* background-color: green; */
   width: 85vw;
-  margin-left: 15vw;
-  margin-right: 15vw;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-evenly;
+}
+.placementGraph{
+  display :flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 50vh;
+  /* margin-top: 10vh; */
+  /* padding: 20; */
 }
 
 @media only screen and (min-width: 1000px) {
@@ -897,8 +912,10 @@ a.brochure-link:hover {
 }
 
 #placement-record {
+  /* background-color: red; */
   margin: 10px;
   display: flex;
+  /* flex-wrap: wrap; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1139,8 +1156,10 @@ a:hover {
   }
 
   #placement-synopsis {
+    /* background-color: red; */
     flex-direction: column;
     padding-top: 30%;
+    /* width: 100%; */
   }
 
   #about {
